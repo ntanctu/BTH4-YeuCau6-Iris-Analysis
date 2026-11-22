@@ -1,0 +1,99 @@
+{
+  "dataset": "UCI Iris (original values)",
+  "doi": "10.24432/C56C76",
+  "license": "CC BY 4.0",
+  "quality": {
+    "raw_rows": 150,
+    "clean_rows": 150,
+    "missing_rows": 0,
+    "invalid_rows": 0,
+    "duplicates_retained": 3,
+    "classes": {
+      "Setosa": 50,
+      "Versicolor": 50,
+      "Virginica": 50
+    }
+  },
+  "model": {
+    "method": "StandardScaler + LogisticRegression",
+    "train_rows": 105,
+    "test_rows": 45,
+    "accuracy_test": 0.9111111111111111,
+    "cv_mean": 0.980952380952381,
+    "cv_std": 0.02608202654786508,
+    "cm": [
+      [
+        15,
+        0,
+        0
+      ],
+      [
+        0,
+        14,
+        1
+      ],
+      [
+        0,
+        3,
+        12
+      ]
+    ],
+    "macro_f1": 0.9107142857142857,
+    "weighted_f1": 0.9107142857142857,
+    "classification_report": {
+      "Setosa": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 15.0
+      },
+      "Versicolor": {
+        "precision": 0.8235294117647058,
+        "recall": 0.9333333333333333,
+        "f1-score": 0.875,
+        "support": 15.0
+      },
+      "Virginica": {
+        "precision": 0.9230769230769231,
+        "recall": 0.8,
+        "f1-score": 0.8571428571428571,
+        "support": 15.0
+      },
+      "accuracy": 0.9111111111111111,
+      "macro avg": {
+        "precision": 0.9155354449472096,
+        "recall": 0.9111111111111111,
+        "f1-score": 0.9107142857142857,
+        "support": 45.0
+      },
+      "weighted avg": {
+        "precision": 0.9155354449472096,
+        "recall": 0.9111111111111111,
+        "f1-score": 0.9107142857142857,
+        "support": 45.0
+      }
+    }
+  },
+  "feature_means": {
+    "sepal_length_cm": {
+      "Setosa": 5.006,
+      "Versicolor": 5.936,
+      "Virginica": 6.587999999999999
+    },
+    "sepal_width_cm": {
+      "Setosa": 3.418,
+      "Versicolor": 2.77,
+      "Virginica": 2.9739999999999998
+    },
+    "petal_length_cm": {
+      "Setosa": 1.464,
+      "Versicolor": 4.26,
+      "Virginica": 5.5520000000000005
+    },
+    "petal_width_cm": {
+      "Setosa": 0.24400000000000002,
+      "Versicolor": 1.3259999999999998,
+      "Virginica": 2.026
+    }
+  }
+}
