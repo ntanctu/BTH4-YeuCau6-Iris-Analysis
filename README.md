@@ -92,30 +92,7 @@ Nếu cài đặt lỗi trên Python quá mới/cũ, nên dùng Python 3.11 ho�
 
 > **Minh bạch phiên bản:** Dữ liệu `load_iris` trong scikit-learn hiện đã sửa hai điểm khác với `iris.data` gốc của UCI. Script `prepare_data.py` khôi phục hai điểm này thành bản gốc UCI. Chi tiết và giấy phép ở `DATA_LICENSE.md`.
 
-## 5. Đưa lên GitHub
-
-Tài khoản GitHub phải có **repository trống mới được tạo** (tên gợi ý `bth04-yeu-cau-6-iris`). Sau khi tạo repository, chạy:
-
-```bash
-git init
-git add .
-git commit -m "BTH04 YC6: automated Iris scientific report and dashboard"
-git branch -M main
-git remote add origin https://github.com/<TEN-TAI-KHOAN>/bth04-yeu-cau-6-iris.git
-git push -u origin main
-```
-
-Thay `<TEN-TAI-KHOAN>` bằng tên GitHub của bạn; khi tạo repository **không đánh dấu** tùy chọn tự tạo README/License vì dự án đã có sẵn. Cần xác thực khi push (Git Credential Manager hoặc GitHub CLI). Mã nguồn này được chuẩn bị sẵn cho GitHub; file ZIP **không có nghĩa là đã được đăng lên tài khoản GitHub**.
-
-## 6. Giấy phép
+## 5. Giấy phép
 
 - **Mã nguồn và tài liệu do dự án tạo:** MIT (`LICENSE`).
 - **Bộ dữ liệu Iris:** CC BY 4.0, phải ghi nguồn và tác giả (`DATA_LICENSE.md`).
-
-## 7. Kết quả nộp
-
-- Báo cáo khoa học PDF: `reports/bao_cao_khoa_hoc_iris.pdf`.
-- Dashboard chạy bằng Streamlit: `app.py`; bản HTML ngoại tuyến xem ngay: `dashboard_offline.html`.
-- CSV thật và CSV được chuẩn hóa: `data/`.
-- Biểu đồ: `assets/`.
-- Code + requirements + giấy phép + README, đủ để tạo repository GitHub.
